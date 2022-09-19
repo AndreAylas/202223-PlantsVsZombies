@@ -38,6 +38,21 @@ public class Controller {
 	}
 
 	/**
+	 * Show prompt and request command.
+	 *
+	 * @return the player command as words
+	 */
+	private String[] prompt() {
+		System.out.print(Messages.PROMPT);
+		String line = scanner.nextLine();
+		String[] words = line.toLowerCase().trim().split("\\s+");
+
+		System.out.println(debug(line));
+
+		return words;
+	}
+
+	/**
 	 * Runs the game logic.
 	 */
 	public void run() {
