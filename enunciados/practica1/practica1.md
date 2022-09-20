@@ -313,6 +313,8 @@ La clase `Game` también mantiene el *estado del juego*:
 - Número de soles acumulados del usuario.
 - Un atributo privado `Random rand` para genera los valores aleatorios.
 
+También necesitaremos las siguientes clases:
+
 - `ZombieManager`: Es una clase auxiliar para llevar la cuenta de cuántos zombis quedan por salir. Tiene un método público `boolean shouldAddZombie()` que se ejecuta en cada ciclo para saber si hay que añadir o no un zombie en ese ciclo. Por dentro utiliza `random` y una `ZombieList`.
 
 - `Level`: Es un clase enumerada con la que se representan los tres niveles de juego. 
